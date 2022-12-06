@@ -29,8 +29,7 @@ library(survival)
 library('GSVA')
 
 ## Input gene signature 
-
-gene_signature = read.xlsx('Gene Signatures_Adrian_10212022.xlsx',check.names = FALSE)
+gene_signature = read.xlsx('Gene Signatures.xlsx',check.names = FALSE)
 
 #### GLP96 Microarray Reference ####
 
