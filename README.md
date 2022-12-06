@@ -20,5 +20,6 @@ Associated publication:
 
 Other publication with this method documented and applied to:
 
-https://elifesciences.org/articles/20728v1[Oncogenic BRAF disrupts thyroid morphogenesis and function via Twist expression]
+- Oncogenic BRAF disrupts thyroid morphogenesis and function via Twist expression
+  https://elifesciences.org/articles/20728v1 
 
