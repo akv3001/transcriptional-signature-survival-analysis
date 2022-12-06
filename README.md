@@ -6,4 +6,4 @@ Associating transcriptional signature with Survival Data
 -  Stratify patients by high/low quartile signature scores based classification to prepate for surival comparison
 -  Apply coxph regression to associate stratified patients with overall survival analysis
 -  Multiple hypothesis correct distribution of signature associations
-- 
+
