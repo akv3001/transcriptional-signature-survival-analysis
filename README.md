@@ -1,5 +1,5 @@
 # Transcriptomic Signature based Survival Analysis
-Associating transcriptional signature with Survival Data. This analysis is insightful in associating model derived findings to highlight the signature's translation values by associating it to patient data
+Associating transcriptional signature with Survival Data. This analysis is insightful in associating model derived findings to highlight a novel gene signature's translation value by associating it to patient data
 
 Question: Associate an identified bone metastasis signature with 
 
