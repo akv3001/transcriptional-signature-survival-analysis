@@ -16,3 +16,7 @@ Broader application:
 
 Associated publication:
 *under review*
+
+
+Other publication with this method documented and applied to:
+https://elifesciences.org/articles/20728v1
