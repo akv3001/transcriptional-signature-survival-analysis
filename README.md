@@ -1,5 +1,5 @@
 # Transcriptomic Signature based Survival Analysis
-Associating transcriptional signature with Survival Data
+Associating transcriptional signature with Survival Data. This analysis is insightful in associating model derived findings to highlight the signature's translation values by associating it to patient data
 
 Question: Associate an identified bone metastasis signature with 
 
@@ -18,8 +18,10 @@ Associated publication:
 *under review*
 
 
-Other publication with this method documented and applied to:
+Other publishes work with this method also documented and applied to:
 
 - Oncogenic BRAF disrupts thyroid morphogenesis and function via Twist expression
   https://elifesciences.org/articles/20728v1 
+
+- Histone 3 Methyltransferases Alter Melanoma Initiation and Progression Through Discrete Mechanisms https://pubmed.ncbi.nlm.nih.gov/35223844/
 
