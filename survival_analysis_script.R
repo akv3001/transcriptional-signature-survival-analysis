@@ -1,7 +1,13 @@
-################################################
+###########################################################################################################################################
 # Analysis to correlate Bone metastasis signature 
 # with bone met status
-################################################
+# About dataset: Clinical data used was associated with Microarray datasets from 2 different studues and therefore batch corrected
+
+# INPUT: excel sheet with each column as a subset of genes identified using different statistical cut-offs
+# OUTPUT: Suvival stats and KM curves for each signature associated for overall survival
+
+############################################################################################################################################
+
 
 
 ## Data used ##
@@ -24,9 +30,9 @@ library(GEOquery)
 library(openxlsx)
 library(dplyr)
 library(sva) # BATCH CORRECTION using ComBat
-require(survminer)
-library(survival)
-library('GSVA')
+require(survminer) # for KM Curve plots
+library(survival) # for coxph
+library(GSVA) # for ssgsea
 
 ## Input gene signature 
 gene_signature = read.xlsx('Gene Signatures.xlsx',check.names = FALSE)
@@ -115,7 +121,7 @@ Combined_final_Expression.bc = sva::ComBat(Combined_final_Expression[,combined_f
 ### Score signature #####
 
 
-# Input expression table is a microarray dataset - some gene probes aren't captures 
+# Input expression table is a microarray dataset - some gene probes aren't captured 
 # this loop prints how many genes from the signature are lost in the analysis
 # prioritizing signatures based on these values
 gene_signature.list = list()
