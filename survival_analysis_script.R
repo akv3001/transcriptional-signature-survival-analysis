@@ -161,9 +161,7 @@ GSVA_signature_score.up_clinical = merge(GSVA_signature_score.up,
 
 
 ###### Survival analysis ########
-
-
-
+# iterates through each signature survival stats to generate the KM Curves
 pdf('Survival_Curves_BMF_Survival_batchcorrected.pdf',onefile = TRUE)
 for (gene_signature in colnames(GSVA_signature_score.up)){
   
