@@ -1,4 +1,4 @@
-# Transcriptomical Signature Survival Analysis
+# Transcriptomic Signature based Survival Analysis
 Associating transcriptional signature with survival data
 
 -  subset gene expression data using signature of interest
