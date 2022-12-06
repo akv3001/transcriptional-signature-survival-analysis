@@ -23,6 +23,11 @@
 library(GEOquery)
 library(openxlsx)
 library(dplyr)
+library(sva) # BATCH CORRECTION using ComBat
+require(survminer)
+library(survival)
+library('GSVA')
+
 ## Input gene signature 
 
 gene_signature = read.xlsx('Gene Signatures_Adrian_10212022.xlsx',check.names = FALSE)
@@ -105,14 +110,11 @@ write.csv(Combined_final_Expression,'Combined_final_Expression_microarray.csv')
 write.csv(combined_final_clinical_metadata,'combined_final_clinical_metadata.csv')
 
 
-# BATCH CORRECTION using ComBat
-library(sva)
 
 Combined_final_Expression.bc = sva::ComBat(Combined_final_Expression[,combined_final_clinical_metadata$geo_accession],batch = combined_final_clinical_metadata$StudyID,mean.only = TRUE)
 
 ### Score signature #####
 
-library('GSVA')
 
 # Input expression table is a microarray dataset - some gene probes aren't captures 
 # this loop prints how many genes from the signature are lost in the analysis
@@ -155,8 +157,7 @@ GSVA_signature_score.up_clinical = merge(GSVA_signature_score.up,
 
 ###### Survival analysis ########
 
-require(survminer)
-library(survival)
+
 
 pdf('Survival_Curves_BMF_Survival_batchcorrected.pdf',onefile = TRUE)
 for (gene_signature in colnames(GSVA_signature_score.up)){
