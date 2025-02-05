@@ -15,13 +15,13 @@ Broader application:
 - signature scoring method can be applied to any expression matrix for downstream survival analysis
 
 Associated publication:
-*under review*
+*published work that applied this analysis*
 
 
 Other publishes work with this method also documented and applied to:
 
-- Oncogenic BRAF disrupts thyroid morphogenesis and function via Twist expression
-  https://elifesciences.org/articles/20728v1 
+- Oncogenic BRAF disrupts thyroid morphogenesis and function via Twist expression: https://elifesciences.org/articles/20728v1 
 
-- Histone 3 Methyltransferases Alter Melanoma Initiation and Progression Through Discrete Mechanisms https://pubmed.ncbi.nlm.nih.gov/35223844/
+- Histone 3 Methyltransferases Alter Melanoma Initiation and Progression Through Discrete Mechanisms:  https://pubmed.ncbi.nlm.nih.gov/35223844/
 
+- Bone-matrix mineralization dampens integrin-mediated mechanosignalling and metastatic progression in breast cancer : https://www.nature.com/articles/s41551-023-01077-3
